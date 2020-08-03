@@ -1,0 +1,128 @@
+body { 
+  height: 1500px;
+}    
+#top { 
+  background-color: #000; 
+  font-size: 23px; 
+  font-weight: bold;
+}
+
+#navbarNav{ 
+  background-color: #000; 
+  position: relative;  
+  font-weight: bold;
+}  
+.nav-item { 
+  font-weight: bold;
+}
+
+.title { 
+  color: #f08300;
+  position: absolute; 
+  right: 160px;
+  font-weight: bold; 
+  font-size: 40px;
+} 
+
+.gs {  
+  margin-top: 10px;
+}
+
+.text {  
+  opacity: 0; 
+  transform: translateY(10px); 
+  text-align: center; 
+  color: #f08300;
+}  
+.card-group { 
+  margin-top: 50px;
+}
+.card-body {  
+  color: #f08300;
+  background-color: #000; 
+  text-align: center;
+} 
+
+#info { 
+  background-color: #000;  
+  color:  #f08300;
+  font-weight: bold; 
+  padding: 30px;
+}  
+
+#list-body { 
+  color: #fff;
+} 
+
+.title{  
+  color:  #f08300;
+  height: 70px;  
+  font-weight: bold; 
+  font-size: 40px; 
+  position: absolute; 
+  right: 85px;
+}  
+
+.inner { 
+  text-align: center;  
+  
+} 
+
+.text {   
+  font-weight: bold;
+} 
+.inner a { 
+  font-size: 40px;  
+  font-weight: bold;
+}
+.inner a:hover {  
+  color: #fff; 
+  font-weight: bold;  
+  text-decoration: none;
+}
+
+#first-image { 
+  background-image: url(https://images.unsplash.com/photo-1517522628113-2a66a330a878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+} 
+
+#secound-image { 
+  background-image: url(https://images.unsplash.com/photo-1592485501215-a4097d98b0e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+}   
+
+#third-image { 
+  background-image: url(https://images.unsplash.com/photo-1591846662153-8d74eb43aecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80);
+}
+
+.display-3 { 
+  font-size: 40px; 
+  font-weight: bold; 
+  text-align: center; 
+  color: #ff8c00;
+} 
+h1 .display-3 { 
+  font-weight: bold;
+}
+.modal-body { 
+  font-weight: bold;
+} 
+
+.card-title { 
+  color: #f08300;   
+}
+
+.nav-item.1 a{ 
+  color: #fff; 
+} 
+li { 
+  list-style-type: none;   
+  margin-right: 5px; 
+  padding-right: 5px; 
+  font-weight: bold;
+} 
+
+#food { 
+  margin-right: 10px;
+} 
+#alchole { 
+  margin-right: 10px;
+}

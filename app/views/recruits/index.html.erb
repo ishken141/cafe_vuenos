@@ -1,0 +1,53 @@
+    <div class="text-center" id="parttime">
+    <h1 class="part-title">ENTRY FORM</h1> 
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" id="name" class="name" placeholder="name">
+    </div> 
+    <div class="form-group">
+      <label for="email">email</label>
+      <input type="text" id="email" class="email" placeholder="email">
+    </div>  
+    <div class="form-group">
+      <label for="tell">phone</label>
+      <input type="tell" id="tell" class="tell" placeholder="phone number">
+    </div>  
+    <div class="form-group">
+      <label for="tell">age</label>
+      <input type="age" id="age" class="age" placeholder="age">
+    </div> 
+    <div class="form-group">
+      <label>
+      <input type="radio" name="gender" value="male" checked>male 
+      </label> 
+      <label>
+      <input type="radio" name="gender" value="male">female
+      </label>
+    </div>    
+    <div class="form-group">
+    <label for="job">current job</label>
+    <select class="custom-select">
+      <option selected>選択してください</option>
+      <option value="1">大学生</option>
+      <option value="2">専門学生</option>
+      <option value="3">フリーター</option>
+      <option value="1">会社員</option>
+      <option value="2">アルバイト</option>
+      <option value="3">自営業</option>
+      <option value="3">無職</option>
+      <option value="3">その他</option>
+    </select>   
+    </div>
+    <div class="form-group" id="pr">
+      <label class="pr">self PR</label>
+      <textarea name="pr"></textarea>
+    </div> 
+    <div class="form-group">
+      <label for="privacy">privacy agreement</label>
+      <input type="checkbox" id="privacy" name="privacy">
+    </div>   
+    <div class="text-center"> 
+    <%= link_to "send", recruits_path, method: :post, class: "btn btn-warning" %>
+    </div>  
+    </div>  
+    

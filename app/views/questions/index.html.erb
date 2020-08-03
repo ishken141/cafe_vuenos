@@ -1,0 +1,38 @@
+<div class="question">
+<div class="container">
+<table class="table table-striped" id="question_table_striped"> 
+<h1 class="text-center" id="question.table">Questions</h1>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th> 
+      <th>TITLE</th>　
+      <th>created date</th>  
+      <th>updated date</th>
+      <th>MENU</th>
+    </tr>
+  </thead>
+  <tbody> 
+  <% @questions.each do |question| %>
+    <tr>
+      <th><%= question.id %></th>
+      <td><%= question.name %></td>
+      <td><%= link_to question.title, question_path(question), class: "option" %></td> 
+      <td><%= question.created_at.strftime("%Y年 %m月 %d日%H時%M分") %></td> 
+      <td><%= question.updated_at.strftime("%Y年 %m月 %d日%H時%M分") %></td> 
+      <td><%= link_to "edit", edit_question_path(question), class: "option" %> 
+          <%= link_to "delete", question_path(question), 
+          method: :delete, 
+          data: { confirm: "Are you sure" }, class: "option" %></td>
+    </tr> 
+    <% end %>
+  </tbody>
+</table>   
+<div class="text-center">
+<%= link_to "new question", new_question_path, class: "btn btn-warning" %>  
+</div> 
+<div class="text-center">
+<%= link_to "HOME", root_path, class: "btn btn-warning", id: "button"%> 
+</div> 
+</div> 
+</div>

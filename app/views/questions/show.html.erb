@@ -1,0 +1,58 @@
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    <%= @question.title %>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title"><%= @question.content %></h4>
+    <p class="card-text"><%= @question.name %></p>
+  </div>
+</div>   
+<div class="table-main">
+<h3 class="text-center" id="answers">answers</h3>
+<table class="table table-striped" id="table"> 
+<% if @question.answers.any? %>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>content</th>
+      <th>menu</th>
+    </tr>
+  </thead>
+  <tbody> 
+  <% @question.answers.each do |answer| %>
+    <tr>
+      <th><%= answer.name %></th>
+      <td><%= answer.content %></td>
+      <td><%= link_to "edit", edit_question_answer_path(@question, answer), class: "option"%> 
+          <%= link_to "delete", question_answer_path(@question, answer), 
+          method: :delete, 
+          data: { confirm: "Are you sure?"}, class: "option" %></td>
+    </tr> 
+    <% end %>  
+    <% else %> 
+  <h4 class="text-center">no answer yet</h4>
+  <% end %>
+  </tbody>  
+</table> 
+</div>
+
+<div class="container">
+<h1 class=text-center id="question.new">post answer</h1> 
+<%= form_with model: [@question,@answer],local: true do |f| %>  
+<%= f.hidden_field :question_id, { value: @question.id } %>  
+<div class="form-group"> 
+<label class="text-center">name</label>
+<%= f.text_field :name, class: "form-control" %>  
+</div> 
+<div class="form-group"> 
+<label class="text-center">content</label>
+<%= f.text_area :content, class: "form-control" %>  
+</div> 
+<div class="text-center">
+<%= f.submit "post", class: "btn btn-warning" %> 
+</div>
+<% end %> 
+</div>  
+</div>   
+<%= link_to "home", questions_path, class: "home" %>

@@ -1,0 +1,14 @@
+<div class="wrap">
+    <div class="inner">
+        <%= link_to "Record Cafe Vuenos", drinks_path, metod: :get, id: "glitch" %> 
+    </div>
+</div>   
+<script> 
+var rand = 1000; 
+function timer(){ 
+  rand = Math.floor(Math.random() * (2000 - 500) + 500); 
+  document.getElementById('glitch').classList.toggle('is-active'); 
+  setTimeout(timer, rand); 
+}  
+timer(); 
+</script>

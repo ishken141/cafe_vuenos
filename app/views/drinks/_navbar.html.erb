@@ -1,0 +1,296 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to "TOP", root_path, class: "btn btn-dark", id: "top" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+      </li>
+      <li class="nav-item">
+        <%= link_to "HOME", drinks_path, class: "btn btn-warning" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "CONCEPT", concepts_path, class: "btn btn-warning" %>
+      </li> 
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal3" id="food">
+ FOOD
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal3Label">FOOD</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"> 
+      <table class="table table-hover"> 
+   <thead>
+    <tr>
+      <th>NUMBER</th>
+      <th>FOOD MENU</th>
+      <th>PRICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>BURGER SLIDERS</td>
+      <td>1280</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>CONBO SLIDERS</td>
+      <td>1280</td>
+    </tr> 
+    <tr>
+      <th scope="row">3</th>
+      <td>BUFFALO CHIKEN SLIDERS</td>
+      <td>1280</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>QUESADILLAS BUFFALO CHIKEN</td>
+      <td>1280</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>QUESADILLAS CHEESE</td>
+      <td>980</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>QUESADILLAS FAJITA STYLE</td>
+      <td>1480</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>BUFFALO PLATTATER</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>LOTS.A.TOTS</td>
+      <td>980</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>FIRE CALAMARI</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>CHEESE NACHO'S</td>
+      <td>1680</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>CHILI NACHO'S</td>
+      <td>1680</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>CHIKEN BREASTS STRIPS</td>
+      <td>650</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>FRIED PICKLES</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>GREEN CARRY</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>FISH &CHIPS</td>
+      <td>980</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>BIG POTATO</td>
+      <td>900</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>ICE</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th scope="row">18</th>
+      <td>CHEESE CAKE</td>
+      <td>400</td>
+    </tr>
+  </tbody>
+</table>
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalScrollable" id="alchole">
+  ALCHOLE
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>NUMBER</th>
+      <th>DRINK MENU</th>
+      <th>PRICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>BEER(GRASS)</td>
+      <td>650</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>BEER</td>
+      <td>800</td>
+    </tr> 
+    <tr>
+      <th scope="row">3</th>
+      <td>HEINEKEN</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>HOUSE WINE</td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>SPAKRING WINE</td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>KAKU HIGHBALL</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>JIM BEAM</td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>LEMON SOUR</td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>JIN TONIC</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>RED EYE</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>CASSIS ORANGE</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>BOTTOLE WINE</td>
+      <td>2480</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>CORA</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>BREND COFFEE</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>AMERICAN COFFEE</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>ESPLESSO</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>COCOA</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>MILK</td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <li class="nav-item">
+      <%= link_to "RECRUIT", recruits_path, class: "btn btn-warning" %>   
+      </li> 
+      <li class="nav-item">
+      <%= link_to "QUESTIONS", questions_path, method: :get, class: "btn btn-warning" %>   
+      </li> 
+    </ul>  
+    <li class="nav-item.1">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-3x" style="color: #fff;"></i></a>
+      </li>  
+      <li class="nav-item.1">
+      <a href="https://www.twitter.com/"><i class="fa fa-twitter fa-3x" style="color: #fff;"></i></a>
+      </li> 
+      <li class="nav-item.1">
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x" style="color: #fff;"></i></a>
+      </li>  
+      <li class="nav-item.1">
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube fa-3x" style="color: #fff;"></i></a> 
+      </li> 
+      <div class="title">
+    Record Cafe Vuenos
+    </div> 
+  </div>
+</nav> 
+
