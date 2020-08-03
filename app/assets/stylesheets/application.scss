@@ -13,21 +13,23 @@
  *= require simple_calendar
  *= require_tree .
  *= require_self
- */
-
+ */ 
+@import "bootstrap/scss/bootstrap";
 @import "home"; 
-@import "drinks"; 
-@import "bootstrap";  
-@import "questions"; 
+@import "drinks";  
+@import "questions";  
+@import "bootstrap";
 @import "answer"; 
 @import "recruits"; 
 @import "concepts";  
 @import "reservations"; 
 @import "font-awesome-sprockets";
-@import "font-awesome";
+@import "font-awesome";   
 body { 
   background-color: #000; 
   font-weight: bold; 
-} 
+}  
+
+
 
 
