@@ -60,7 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sassc', '~> 2.0.0'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'bootstrap' 
+gem 'bootstrap-sass' 
 gem "pry-rails" 
 gem "simple_calendar", "~> 2.0" 
 gem "font-awesome-sass" 
